@@ -47,12 +47,11 @@
 <body>
     <div class="form-container">
         <!-- Netlify Form -->
-        <form name="modal-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="modal-contact" />
-            <p class="hidden">
-                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-            </p>
-            
+        <div aria-hidden="true" style="position: absolute; left: -9999px;">
+            <label>
+              Don’t fill this out if you're human: <input name="bot-field" />
+            </label>
+          </div>
             <div class="form-group">
                 <label for="modalName">Your Name <span class="text-danger">*</span></label>
                 <input type="text" id="modalName" name="name" required placeholder="Full name here">
